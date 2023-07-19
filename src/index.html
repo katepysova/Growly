@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Growly</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test Panda</title>
-  <link rel="stylesheet" href="./css/style.min.css" />
-  <link rel="shortcut icon" type="image/png" href="images/favicon.webp" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <h1>Home page 46</h1>
-    <h3>Late</h3>
-    <img class="panda" src="./images/1.jpeg" alt="panda" />
-    <img class="panda" src="./images/panda.png" alt="panda" />
-    <img style="height: 100px; width: 100px" src="./icons/svg/bowling-ball-outline.svg" />
-    <svg>
-      <use href="./icons/sprite.svg#alarm-outline"></use>
-    </svg>
-    <svg>
-      <use href="./icons/sprite.svg#alarm-outline"></use>
-    </svg>
-    <svg>
-      <use href="./icons/sprite.svg#bowling-ball-outline"></use>
-    </svg>
-  </div>
-  <script src="./js/script.js"></script>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <a class="logo" href="#">
+            <img class="logo__image" src="images/logo.svg" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Home </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> About </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Pages </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"> Services </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="button button--primary" href="#">Get started</a>
+          <button class="menu" type="button">
+            <span class="menu__icon"></span>
+          </button>
+        </div>
+      </header>
+      <main class="main">main</main>
+      <footer class="footer">Footer</footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

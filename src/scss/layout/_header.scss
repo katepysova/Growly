@@ -1,0 +1,147 @@
+@import "../variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height-desktop;
+
+  &__container {
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    & > *:first-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      bottom: -4px;
+      width: 0;
+      height: 1.8px;
+      background-color: $color-white;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      &::before {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    position: fixed;
+    top: $header-height-desktop;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    transition: all 0.2s;
+    left: -100%;
+  }
+}
+
+.menu {
+  display: none;
+  width: rem(40px);
+  height: rem(40px);
+  align-items: center;
+  justify-content: center;
+  background-color: $color-transparent;
+  border: unset;
+
+  &__icon {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 100%;
+      height: 2.5px;
+      border-radius: 2px;
+      background-color: $color-white;
+      transition: all 0.4s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 12px;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+  }
+}
+
+.header.header--collapsed {
+  .nav {
+    left: 0;
+  }
+
+  .menu {
+    &__icon {
+      background-color: $color-transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(225deg);
+      }
+
+      &::after {
+        transform: rotate(-225deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../variables";
+
+.button {
+  &,
+  &:link,
+  &:visited {
+    padding: 16px 24px;
+    color: $color-white;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+  }
+
+  &--primary {
+    background-color: $color-blue;
+
+    &:hover {
+      background-color: color.adjust($color: $color-blue, $lightness: -10%);
+    }
+
+    &:active {
+      background-color: color.adjust($color: $color-blue, $lightness: -20%);
+    }
+  }
+
+  &--secondary {
+    background: $color-grey-transparent;
+  }
+}

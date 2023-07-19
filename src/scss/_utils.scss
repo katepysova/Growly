@@ -1,3 +1,7 @@
-.u-static {
-  overflow: hidden;
+@import "./variables";
+
+.u-mobile-hidden {
+  @media only screen and (max-width: $bp-medium) {
+    display: none !important;
+  }
 }

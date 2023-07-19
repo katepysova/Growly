@@ -1,3 +1,4 @@
+@import "./fonts";
 @import "./variables";
 @import "./functions";
 @import "./mixins";
@@ -24,6 +25,14 @@ html {
   font-size: rem($html-font-size);
 }
 
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  line-height: rem(24px);
+  color: $color-grey;
+  background-color: $color-black;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -33,6 +42,7 @@ html {
 
 main {
   flex-grow: 1;
+  padding-top: $header-height-desktop;
 }
 
 img {
@@ -45,15 +55,16 @@ svg {
   height: rem(24px);
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 a {
   &:link,
   &:visited {
     text-decoration: none;
   }
-}
-
-button {
-  cursor: pointer;
 }
 
 ul {

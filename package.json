@@ -1,7 +1,7 @@
 {
-  "name": "gulp-2022",
+  "name": "growly",
   "version": "1.0.0",
-  "description": "gulp starter file",
+  "description": "growly - landing page",
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp dev",
