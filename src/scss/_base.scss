@@ -43,6 +43,10 @@ body {
 main {
   flex-grow: 1;
   padding-top: $header-height-desktop;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: $header-height-mobile;
+  }
 }
 
 img {
