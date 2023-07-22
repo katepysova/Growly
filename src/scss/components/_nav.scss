@@ -11,11 +11,9 @@
       align-items: center;
       text-align: center;
       gap: 24px;
-
-      &:not(:last-child) {
-        margin-bottom: 72px;
-      }
     }
+
+   
   }
 
   &__link {
@@ -82,5 +80,6 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
+    gap: 72px;
   }
 }
