@@ -24,7 +24,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-medium) {
       gap: 16px;
     }
 
@@ -46,6 +46,11 @@
       color: $color-white;
       margin-bottom: 32px;
       text-transform: capitalize;
+
+      @media only screen and (max-width: $bp-large) {
+        font-size: 36px;
+        margin-bottom: 24px;
+      }
     }
 
     &-text {
@@ -54,6 +59,10 @@
 
     @media only screen and (max-width: $bp-large) {
       padding: 36px 24px;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 24px;
+      }
     }
   }
 
