@@ -1,0 +1,119 @@
+@import "../variables";
+@import "../mixins";
+
+.testimonials {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__content {
+    .heading-primary {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 76px;
+
+    .paragraph {
+      flex-basis: 57.5%;
+
+      @media only screen and (max-width: $bp-small) {
+        flex-basis: auto;
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+
+  &__card {
+    border-radius: 30px;
+    background-color: rgba($color-grey, 0.1);
+    padding: 64px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+    &-title {
+      @include line-clip(2, $is-flex-item: true);
+
+      color: $color-white;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+
+    .paragraph {
+      @include line-clip(7, $is-flex-item: true);
+    }
+  }
+
+  &__person {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    img {
+      width: 68px;
+      height: 68px;
+    }
+
+    &--1 {
+      img {
+        border-radius: 0 68px 68px;
+      }
+    }
+
+    &--2 {
+      img {
+        border-radius: 68px 0 68px 68px;
+      }
+    }
+
+    &--3 {
+      img {
+        border-radius: 68px 68px 0;
+      }
+    }
+
+    figcaption {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      color: $color-white;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    &-company {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
+  }
+}
