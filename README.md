@@ -1,6 +1,6 @@
-# Pattern
+# Growly
 
-Short description.  
+Growly page layout.  
 [Demo](link).
 
 ## Installation
@@ -39,10 +39,11 @@ Short description.
 ### How to fix dependency issue with `gulp-gh-pages`:
 
 Found the fix to this error!
+
 1. After you install gulp-gh-pages using npm, navigate to the below folder
 
 `node_modules\gulp-gh-pages\node_modules`
 
 2. delete `gift` folder under `gulp-gh-pages`
 
-3. Run `npm install gift`
+3. Run `npm install gift --save-dev`

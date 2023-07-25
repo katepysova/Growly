@@ -13,3 +13,11 @@
     display: inline-block !important;
   }
 }
+
+.u-scroll-margin {
+  scroll-margin: calc(#{$header-height-desktop} - 40px);
+
+  @media only screen and (max-width: $bp-collapse) {
+    scroll-margin: $header-height-mobile;
+  }
+}
