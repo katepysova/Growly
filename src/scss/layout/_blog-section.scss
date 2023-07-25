@@ -62,7 +62,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    background-color: rgba($color-grey, 0.1);
+    background-color: $color-grey-transparent;
     border-radius: 30px;
     overflow: hidden;
 

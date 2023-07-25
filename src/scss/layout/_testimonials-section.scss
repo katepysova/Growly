@@ -61,7 +61,7 @@
 
   &__card {
     border-radius: 30px;
-    background-color: rgba($color-grey, 0.1);
+    background-color: $color-grey-transparent;
     padding: 64px 40px;
     display: flex;
     flex-direction: column;

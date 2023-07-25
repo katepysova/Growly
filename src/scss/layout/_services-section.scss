@@ -60,7 +60,7 @@
   &__card {
     padding: 54px 24px;
     border-radius: 30px;
-    background-color: rgba($color-grey, 0.1);
+    background-color: $color-grey-transparent;
 
     &--1 {
       grid-row: 2 / 4;
