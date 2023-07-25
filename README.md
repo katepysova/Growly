@@ -1,13 +1,13 @@
 # Growly
 
 Growly page layout.  
-[Demo](link).
+[Demo](https://katepysova.github.io/Growly/).
 
 ## Installation
 
 1. Clone this repo or downloand zip:
 
-   `git@github.com:katepysova/CV.git`
+   `git@github.com:katepysova/Growly.git`
 
 2. Change your current directory to this project directory.
 
