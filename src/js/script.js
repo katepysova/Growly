@@ -2,20 +2,25 @@ import checkEmail from "./form.js";
 
 const menuButtonElement = document.querySelector(".menu");
 const headerElement = document.querySelector(".header");
-const form = document.querySelector(".form");
-const emailElem = document.querySelector("#email");
+const formElement = document.querySelector(".form");
+const emailElement = document.querySelector("#email");
 
-form.addEventListener("submit", (event) => {
+const yearElement = document.querySelector("#year");
+
+yearElement.innerText = new Date().getFullYear();
+
+formElement.addEventListener("submit", (event) => {
   event.preventDefault();
-  const isEmailValid = checkEmail(emailElem);
+  const isEmailValid = checkEmail(emailElement);
 
   if (isEmailValid) {
     /*
       send data
     */
-    emailElem.value = "";
+    emailElement.value = "";
   }
 });
+
 menuButtonElement.addEventListener("click", () => {
   headerElement.classList.toggle("header--collapsed");
 });
