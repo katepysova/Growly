@@ -28,7 +28,7 @@
     align-self: center;
 
     &::after {
-      content: url("../../images/decor.svg");
+      content: url("../images/decor.svg");
       width: 122px;
       height: 122px;
       position: absolute;
@@ -126,7 +126,7 @@
     }
 
     &::before {
-      content: url("../../images/why-images/check.svg");
+      content: url("../images/why-images/check.svg");
       width: 32px;
       height: 32px;
     }
